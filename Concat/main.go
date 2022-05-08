@@ -1,6 +1,9 @@
 package main
 
-import "log"
+import (
+	"log"
+	"strings"
+)
 
 func main() {
 	// この書き方は遅くなる
@@ -13,4 +16,15 @@ func main() {
 		title += word
 	}
 	log.Print(title)
+
+	// 以下のstrings.Builderを使う書き方の方が良い
+	var builder strings.Builder
+	builder.Grow(100) //　最大100文字以下と仮定できる場合
+	for i, word := range src {
+		if i != 0 {
+			builder.WriteByte(' ')
+		}
+		builder.WriteString(word) // ここで書き込み
+	}
+	log.Print(builder.String()) // 出力
 }
