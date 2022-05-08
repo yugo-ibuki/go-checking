@@ -15,6 +15,10 @@ func tzPrint() {
 	tz, _ := time.LoadLocation("America/Los_Angeles")
 	future := time.Date(2015, time.October, 21, 8, 28, 0, 0, tz)
 	fmt.Println(now.String())
+	/*
+		JavaScriptとの連携する場合、RFC3339Nanoを使うとJavaScriptのDate.parse()関数で処理することができる。
+		JavaScriptからのDateインスタンスのtoISOString生成した文字列は、time.RFC3339Nanoを指定したtime.Parse()でパースできる。
+	*/
 	fmt.Println(future.Format(time.RFC3339Nano))
 }
 
