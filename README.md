@@ -2,4 +2,4 @@
 
 2022/05/08~
 
-[メモ]('ReadMeMemo/README.md')
+[メモ]('https://github.com/yugo-ibuki/go-checking/tree/main/ReadMeMemo')
