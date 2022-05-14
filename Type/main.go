@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+/*
+	参考:
+	https://qiita.com/daikuro/items/61424d4e399a725b1819
+*/
+
 type HTTPState int
 
 const (
