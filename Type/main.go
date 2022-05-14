@@ -26,3 +26,10 @@ func (s HTTPState) String() string {
 		return fmt.Sprintf("HTTPStatus(%d)", s)
 	}
 }
+
+func main() {
+	fmt.Println(HTTPState(200).String()) // OK
+	fmt.Println(HTTPState(401).String()) // Unauthorized
+	fmt.Println(HTTPState(402).String()) // PaymentRequired
+	fmt.Println(HTTPState(403).String()) // Forbidden
+}
