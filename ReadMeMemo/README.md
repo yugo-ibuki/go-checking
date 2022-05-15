@@ -6,11 +6,11 @@ arr := make([]Type, 0, len(t))
 ```
 
 インスタンス化する方法
-1. new()関数で作成
+1. new()関数で作成(ゼロ値のみ)
 ```
 p1 := new(Person)
 ```
-2. var変数宣言
+2. var変数宣言(ゼロ値のみ)
 ```
 var p2 Person
 ```
