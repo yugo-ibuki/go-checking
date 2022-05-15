@@ -4,3 +4,20 @@
 ```
 arr := make([]Type, 0, len(t))
 ```
+
+インスタンス化する方法
+1. new()関数で作成
+```
+p1 := new(Person)
+```
+2. var変数宣言
+```
+var p2 Person
+```
+3. 複合リテラル(composite literal)で作成(初期値を設定できる)
+```
+p3 := &Person{
+    FirstName: "苗字",
+    LastName: "名前",
+}
+```
