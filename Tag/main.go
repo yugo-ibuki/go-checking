@@ -19,6 +19,7 @@ func main() {
 		Name:     "gumi",
 		Language: "Elixir",
 	}
+	// タグを取り扱うにはreflectパッケージを利用する。
 	tag := reflect.TypeOf(organization).Field(0).Tag
 	fmt.Println(tag.Get("label"))      // -> 名前
 	fmt.Println(tag.Get("json"))       // -> name
